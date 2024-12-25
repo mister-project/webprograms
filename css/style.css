@@ -26,8 +26,8 @@
 }
 
 #img_logo {
-    width: 200px;
-    height: 100px;
+    width: 400px;
+    height: 200px;
 }
 
 .nav {
@@ -59,6 +59,15 @@
 
 }
 
-/* .nav li {
-    padding-left: 25px;    /* задаем отступы между элементами меню с одной стороны
-}*/
+table {
+    border-collapse: collapse;
+    width: 50%;
+    margin: 20px auto;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
