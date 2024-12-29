@@ -76,6 +76,14 @@ h1 {
     text-align: center;
 }
 
-p {
+h2 {
     text-align: center;
+}
+
+p {
+
+    width: 50%;
+    text-align: center;
+    margin: 20px auto;
+
 }
