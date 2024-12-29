@@ -82,7 +82,7 @@ h2 {
 
 p {
 
-    width: 50%;
+    max-width: 50%;
     text-align: center;
     margin: 20px auto;
 
