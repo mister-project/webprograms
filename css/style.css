@@ -29,8 +29,8 @@
 }
 
 #img_logo {
-  width: 400px;
-  height: 200px;
+  width: 70%;
+  /* height: 30%; */
 }
 
 .nav {
@@ -39,6 +39,10 @@
   /* Убираем кругляжки у элементов списка */
   padding: 0;
   margin: auto;
+
+  @media (max-width: 700px) {
+    display: none;
+  }
 }
 
 .nav li a {
@@ -50,6 +54,7 @@
   /* Убирает подчеркивание ссылки */
   padding: 10px 15px;
   /* отступы сверху 10px, а по бокам 20 */
+  white-space: nowrap;
 }
 
 .nav li a:hover {
