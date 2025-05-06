@@ -1,89 +1,87 @@
 * {
-    box-sizing: border-box;
-    font-family: sans-serif;
-    /* Удаление засечек у букв */
+  box-sizing: border-box;
+  font-family: sans-serif;
+  /* Удаление засечек у букв */
 }
 
 .container {
-    width: 1170px;
-    margin: 0 auto;
+  width: auto;
+  margin: 0 auto;
+  /* border: 1px solid green; */
 }
 
 .menu {
-    /* border: 1px solid red; помогает увидеть границы меню при настройке */
+  width: 50%;
+  /*помогает увидеть границы меню при настройке*/
+  /* border: 1px solid red;  */
+  margin: auto;
 }
 
 .menu_inner {
-
-    margin: 25px 0;
-    /* отступ сверху 25, а побокам 0 */
-    display: flex;
-    /* выводим блоки в одну строку */
-    justify-content: space-between;
-    /* Раскидываем блоки по краям */
-    align-items: center;
-    /* Выравнивание по вертикали */
+  margin: 25px 0;
+  /* отступ сверху 25, а побокам 0 */
+  display: flex;
+  /* выводим блоки в одну строку */
+  justify-content: space-between;
+  /* Раскидываем блоки по краям */
+  align-items: center;
+  /* Выравнивание по вертикали */
 }
 
 #img_logo {
-    width: 400px;
-    height: 200px;
+  width: 400px;
+  height: 200px;
 }
 
 .nav {
-    display: flex;
-    list-style: none;
-    /* Убираем кругляжки у элементов списка */
-    padding: 0;
-    margin: 0;
-
-
+  display: flex;
+  list-style: none;
+  /* Убираем кругляжки у элементов списка */
+  padding: 0;
+  margin: auto;
 }
 
 .nav li a {
-    text-transform: uppercase;
-    /* Делаем все буквы заглавными */
-    color: #999;
-    /* Серый цвет текста */
-    text-decoration: none;
-    /* Убирает подчеркивание ссылки */
-    padding: 10px 15px;
-    /* отступы сверху 10px, а по бокам 20 */
+  text-transform: uppercase;
+  /* Делаем все буквы заглавными */
+  color: #999;
+  /* Серый цвет текста */
+  text-decoration: none;
+  /* Убирает подчеркивание ссылки */
+  padding: 10px 15px;
+  /* отступы сверху 10px, а по бокам 20 */
 }
 
 .nav li a:hover {
-    /* Задание эффекта при наведении на ссылку */
-    background-color: #ffc744;
-    color: white;
-    border-radius: 5px;
-
+  /* Задание эффекта при наведении на ссылку */
+  background-color: #ffc744;
+  color: white;
+  border-radius: 5px;
 }
 
 table {
-    border-collapse: collapse;
-    width: 50%;
-    margin: 20px auto;
+  border-collapse: collapse;
+  width: 50%;
+  margin: 20px auto;
 }
 
 th,
 td {
-    border: 1px solid black;
-    padding: 8px;
-    text-align: center;
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
 }
 
 h1 {
-    text-align: center;
+  text-align: center;
 }
 
 h2 {
-    text-align: center;
+  text-align: center;
 }
 
 p {
-
-    max-width: 100%;
-    text-align: center;
-    margin: 20px auto;
-
+  max-width: 100%;
+  text-align: center;
+  margin: 20px auto;
 }
