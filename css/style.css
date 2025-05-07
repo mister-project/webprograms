@@ -7,17 +7,22 @@
 .container {
   width: auto;
   margin: 0 auto;
-  /* border: 1px solid green; */
+  display: flex;
+  /* выводим блоки в одну строку */
+  justify-content: space-between;
+  /* Раскидываем блоки по краям */
+  align-items: center;
+  /* Выравнивание по вертикали */
 }
 
-.menu {
+.menu-top {
   width: 50%;
   /*помогает увидеть границы меню при настройке*/
   /* border: 1px solid red;  */
   margin: auto;
 }
 
-.menu_inner {
+.menu_inner-top {
   margin: 25px 0;
   /* отступ сверху 25, а побокам 0 */
   display: flex;
@@ -28,12 +33,21 @@
   /* Выравнивание по вертикали */
 }
 
-#img_logo {
-  width: 70%;
-  /* height: 30%; */
+.logo {
+  @media (max-width: 700px) {
+    align-items: left;
+  }
 }
 
-.nav {
+#img_logo {
+  width: 80%;
+  max-width: 300px;
+  @media (max-width: 700px) {
+    align-self: start;
+  }
+}
+
+.nav-top {
   display: flex;
   list-style: none;
   /* Убираем кругляжки у элементов списка */
@@ -45,7 +59,7 @@
   }
 }
 
-.nav li a {
+.nav-top li a {
   text-transform: uppercase;
   /* Делаем все буквы заглавными */
   color: #999;
@@ -57,7 +71,7 @@
   white-space: nowrap;
 }
 
-.nav li a:hover {
+.nav-top li a:hover {
   /* Задание эффекта при наведении на ссылку */
   background-color: #ffc744;
   color: white;
@@ -79,14 +93,114 @@ td {
 
 h1 {
   text-align: center;
+  width: 60%;
+  margin: auto;
 }
 
 h2 {
   text-align: center;
 }
 
-p {
-  max-width: 100%;
+.preamble {
+  max-width: 60%;
   text-align: center;
   margin: 20px auto;
+}
+
+.preamble span {
+  color: #c71c1c;
+}
+
+.contacts {
+  margin: auto;
+  /* border: 2px solid red; */
+}
+
+.contacts img {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.menu-footer {
+  display: none;
+  position: fixed;
+  right: 2%;
+  top: 70px;
+  border: 2px solid white;
+  padding: 5px 10px;
+
+  align-self: center;
+  height: 400x;
+  min-width: 150px;
+  border-radius: 16px;
+  /* text-align: center; */
+  padding-left: 5px;
+  cursor: pointer;
+  line-height: 28px;
+  z-index: 1;
+  user-select: none;
+  transform: scale(1);
+  border: 4px solid red;
+
+  background-color: rgb(196, 223, 100);
+}
+
+@viewport {
+  user-zoom: fixed;
+}
+
+.menu_inner-footer {
+  margin: 10px 0;
+  /* отступ сверху 25, а побокам 0 */
+  /* display: flex; */
+  /* выводим блоки в одну строку */
+  /* justify-content: space-between; */
+  /* Раскидываем блоки по краям */
+  align-items: center;
+  /* Выравнивание по вертикали */
+}
+
+.nav-footer {
+  /* display: flex; */
+  list-style: none;
+  /* Убираем кругляжки у элементов списка */
+  padding: 10px;
+  margin: 0;
+}
+
+.nav-footer li {
+  margin-bottom: 20px;
+}
+
+.nav-footer li a {
+  text-transform: uppercase;
+  /* Делаем все буквы заглавными */
+  color: red;
+  /* Серый цвет текста */
+  text-decoration: none;
+  /* Убирает подчеркивание ссылки */
+  /* padding: 20px 15px; */
+  /* отступы сверху 10px, а по бокам 20 */
+  /* padding: 10px; */
+  margin-bottom: 200px;
+}
+
+.nav-footer li a:hover {
+  /* Задание эффекта при наведении на ссылку */
+  background-color: #ffc744;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.burger-top img {
+  width: 50px;
+}
+
+.burger-top :hover {
+  /* Задание эффекта при наведении на ссылку */
+  background-color: #ffc744;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
 }
