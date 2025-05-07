@@ -93,7 +93,8 @@ td {
 
 h1 {
   text-align: center;
-  width: 60%;
+  width: 80%;
+  max-width: 1440px;
   margin: auto;
 }
 
@@ -102,7 +103,8 @@ h2 {
 }
 
 .preamble {
-  max-width: 60%;
+  width: 90%;
+  max-width: 1440px;
   text-align: center;
   margin: 20px auto;
 }
@@ -193,6 +195,14 @@ h2 {
 }
 
 .burger-top :hover {
+  /* Задание эффекта при наведении на ссылку */
+  background-color: #ffc744;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.burger-top1 :hover {
   /* Задание эффекта при наведении на ссылку */
   background-color: #ffc744;
   color: white;
