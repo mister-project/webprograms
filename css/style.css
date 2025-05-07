@@ -62,7 +62,7 @@
 .nav-top li a {
   text-transform: uppercase;
   /* Делаем все буквы заглавными */
-  color: #999;
+  color: #030303;
   /* Серый цвет текста */
   text-decoration: none;
   /* Убирает подчеркивание ссылки */
@@ -109,6 +109,7 @@ h2 {
 
 .preamble span {
   color: #c71c1c;
+  font-weight: 700;
 }
 
 .contacts {
@@ -151,17 +152,11 @@ h2 {
 
 .menu_inner-footer {
   margin: 10px 0;
-  /* отступ сверху 25, а побокам 0 */
-  /* display: flex; */
-  /* выводим блоки в одну строку */
-  /* justify-content: space-between; */
-  /* Раскидываем блоки по краям */
   align-items: center;
   /* Выравнивание по вертикали */
 }
 
 .nav-footer {
-  /* display: flex; */
   list-style: none;
   /* Убираем кругляжки у элементов списка */
   padding: 10px;
