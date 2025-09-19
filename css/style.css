@@ -148,9 +148,7 @@ h2 {
   background-color: rgb(196, 223, 100);
 }
 
-@viewport {
-  user-zoom: fixed;
-}
+
 
 .menu_inner-footer {
   margin: 10px 0;
@@ -208,4 +206,19 @@ h2 {
   color: white;
   border-radius: 5px;
   padding: 10px;
+}
+
+.blog_post {
+  width: 90%;
+  max-width: 700px;
+  text-align: justify;
+  margin: 20px auto;
+}
+
+.blog_post span {
+  color: #c71c1c;
+  font-weight: 700;
+}
+@viewport {
+  user-zoom: fixed;
 }
