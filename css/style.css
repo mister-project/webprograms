@@ -104,7 +104,7 @@ h2 {
 
 .preamble {
   width: 90%;
-  max-width: 1440px;
+  max-width: 900px;
   text-align: center;
   margin: 20px auto;
 }
@@ -210,7 +210,7 @@ h2 {
 
 .blog_post {
   width: 90%;
-  max-width: 700px;
+  max-width: 900px;
   text-align: justify;
   margin: 20px auto;
 }
