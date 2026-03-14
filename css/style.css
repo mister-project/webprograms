@@ -1,225 +1,198 @@
+/*Удаляем отступы по умолчанию во всем документе*/
 * {
-  box-sizing: border-box;
-  font-family: sans-serif;
-  /* Удаление засечек у букв */
+  margin: 0;
+  padding: 0;
+}
+/*прокрутка будет не впритык к секции, а не доходя до нее 40px:*/
+:target {
+  scroll-margin-top: 40px;
 }
 
-.container {
-  width: auto;
-  margin: 0 auto;
-  display: flex;
-  /* выводим блоки в одну строку */
-  justify-content: space-between;
-  /* Раскидываем блоки по краям */
-  align-items: center;
-  /* Выравнивание по вертикали */
+/*Делаем плавную прокрутку при переходе по ссылкам на якоря*/
+html {
+  scroll-behavior: smooth;
 }
 
-.menu-top {
-  width: 50%;
-  /*помогает увидеть границы меню при настройке*/
-  /* border: 1px solid red;  */
-  margin: auto;
+body {
+  background-color: black;
+  color: blanchedalmond;
 }
 
-.menu_inner-top {
-  margin: 25px 0;
-  /* отступ сверху 25, а побокам 0 */
-  display: flex;
-  /* выводим блоки в одну строку */
-  justify-content: space-between;
-  /* Раскидываем блоки по краям */
-  align-items: center;
-  /* Выравнивание по вертикали */
-}
-
-.logo {
-  @media (max-width: 700px) {
-    align-items: left;
-  }
+section {
+  margin-top: 30px;
 }
 
 #img_logo {
   width: 80%;
-  max-width: 300px;
-  @media (max-width: 700px) {
-    align-self: start;
-  }
+  max-width: 200px;
+  height: 230px;
+
+  border-radius: 50%;
+}
+.around {
+  transform: rotate(1.5turn);
+  background: linear-gradient(90deg, red, blue);
 }
 
-.nav-top {
+.container0 {
   display: flex;
-  list-style: none;
-  /* Убираем кругляжки у элементов списка */
-  padding: 0;
-  margin: auto;
+  /*горизонтальное выравнивание*/
+  justify-content: center;
+}
 
-  @media (max-width: 700px) {
-    display: none;
+.container1 {
+  /* border: 3px solid red; */
+  height: 3831px;
+  width: 1184px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
   }
 }
 
-.nav-top li a {
+.container2 {
+  /* border: 3px solid green; */
+  position: sticky;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-height: 500px;
+  padding-bottom: 96px;
+  padding-top: 50px;
+  top: 0px;
+  width: 560px;
+  @media (max-width: 1024px) {
+    position: static;
+    width: 100%;
+  }
+}
+
+.container20 {
+  position: sticky;
+  box-sizing: border-box;
+  display: block;
+  flex-direction: column;
+  height: 500px;
+  justify-content: space-between;
+  max-height: 500px;
+  padding-bottom: 96px;
+  padding-top: 96px;
+
+  width: 557px;
+  @media (max-width: 1024px) {
+    position: static;
+    width: 100%;
+  }
+}
+
+.container3 {
+  /* border: 3px solid blue; */
+  box-sizing: border-box;
+  display: block;
+  height: 3865px;
+  padding-bottom: 96px;
+  padding-top: 20px;
+  width: 603px;
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
+}
+.projects_container {
+  display: flex;
+  justify-content: normal;
+  align-content: center;
+  display: none;
+  /* border: 3px solid yellow; */
+  margin-top: 20px;
+  @media (max-width: 1024px) {
+    flex-direction: column-reverse;
+  }
+}
+.video_description {
+  width: 250px;
+  height: 150px;
+  /* border: 3px solid #319e31; */
+  @media (max-width: 1024px) {
+    width: auto;
+    height: 100%;
+    align-content: center;
+  }
+}
+
+.video_description img {
+  /* border: 3px solid violet; */
+  width: 172px;
+  height: 150px;
+  @media (max-width: 1024px) {
+    width: 100%;
+    height: inherit;
+    align-content: center;
+  }
+}
+.rest_description {
+  width: 100%;
+  height: auto;
+  /* border: 3px solid blue; */
+}
+
+/*отследим переход по якорю и подсветить пользователю какой-то блок или еще что-то:*/
+:target {
+  color: yellow;
+}
+
+/* #experience {
+
+    /*scroll-margin-top: 30px;*/
+/* } */
+
+.name_project {
+  font-size: 25px;
+}
+
+.arrow4 {
+  width: 20px;
+}
+
+.project_table th {
+  border-bottom: 2px solid white;
+}
+.project_table td {
+  border-bottom: 2px solid white;
+}
+
+.nav {
+  list-style: none; /* Убираем кругляжки у элементов списка */
+
+  /* padding: 0;
+  margin: auto; */
+}
+.nav li {
+  padding-top: 5px;
+}
+.nav li a {
   text-transform: uppercase;
   /* Делаем все буквы заглавными */
-  color: #030303;
+  color: white;
   /* Серый цвет текста */
   text-decoration: none;
   /* Убирает подчеркивание ссылки */
-  padding: 10px 15px;
+  padding: 5px;
   /* отступы сверху 10px, а по бокам 20 */
   white-space: nowrap;
 }
 
-.nav-top li a:hover {
+.nav li a:hover {
   /* Задание эффекта при наведении на ссылку */
   background-color: #ffc744;
-  color: white;
+  color: black;
   border-radius: 5px;
 }
 
-table {
-  border-collapse: collapse;
-  width: 50%;
-  margin: 20px auto;
-}
-
-th,
-td {
-  border: 1px solid black;
-  padding: 8px;
-  text-align: center;
-}
-
-h1 {
-  text-align: center;
-  width: 80%;
-  max-width: 1440px;
-  margin: auto;
-}
-
-h2 {
-  text-align: center;
-}
-
-.preamble {
-  width: 90%;
-  max-width: 900px;
-  text-align: center;
-  margin: 20px auto;
-}
-
-.preamble span {
-  color: #c71c1c;
-  font-weight: 700;
-}
-
-.contacts {
-  margin: auto;
+#contacts img {
   /* border: 2px solid red; */
-}
-
-.contacts img {
-  text-align: center;
-  margin: 20px auto;
-}
-
-.menu-footer {
-  display: none;
-  position: fixed;
-  right: 2%;
-  top: 70px;
-  border: 2px solid white;
-  padding: 5px 10px;
-
-  align-self: center;
-  height: 400x;
-  min-width: 150px;
-  border-radius: 16px;
-  /* text-align: center; */
-  padding-left: 5px;
-  cursor: pointer;
-  line-height: 28px;
-  z-index: 1;
-  user-select: none;
-  transform: scale(1);
-  border: 4px solid red;
-
-  background-color: rgb(196, 223, 100);
-}
-
-
-
-.menu_inner-footer {
-  margin: 10px 0;
-  align-items: center;
-  /* Выравнивание по вертикали */
-}
-
-.nav-footer {
-  list-style: none;
-  /* Убираем кругляжки у элементов списка */
-  padding: 10px;
-  margin: 0;
-}
-
-.nav-footer li {
-  margin-bottom: 20px;
-}
-
-.nav-footer li a {
-  text-transform: uppercase;
-  /* Делаем все буквы заглавными */
-  color: red;
-  /* Серый цвет текста */
-  text-decoration: none;
-  /* Убирает подчеркивание ссылки */
-  /* padding: 20px 15px; */
-  /* отступы сверху 10px, а по бокам 20 */
-  /* padding: 10px; */
-  margin-bottom: 200px;
-}
-
-.nav-footer li a:hover {
-  /* Задание эффекта при наведении на ссылку */
-  background-color: #ffc744;
-  color: white;
-  border-radius: 5px;
-  padding: 10px;
-}
-
-.burger-top img {
-  width: 50px;
-}
-
-.burger-top :hover {
-  /* Задание эффекта при наведении на ссылку */
-  background-color: #ffc744;
-  color: white;
-  border-radius: 5px;
-  padding: 10px;
-}
-
-.burger-top1 :hover {
-  /* Задание эффекта при наведении на ссылку */
-  background-color: #ffc744;
-  color: white;
-  border-radius: 5px;
-  padding: 10px;
-}
-
-.blog_post {
-  width: 90%;
-  max-width: 900px;
-  text-align: justify;
-  margin: 20px auto;
-}
-
-.blog_post span {
-  color: #c71c1c;
-  font-weight: 700;
-/*  добавочка*/
-}
-@viewport {
-  user-zoom: fixed;
+  margin: auto;
 }
