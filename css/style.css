@@ -60,7 +60,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  max-height: 500px;
+  max-height: 600px;
   padding-bottom: 96px;
   padding-top: 50px;
   top: 0px;
