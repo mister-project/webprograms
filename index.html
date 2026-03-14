@@ -1,246 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="./jmg/xxh.ico" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <script src="./scripts/modalMenu.js" defer></script>
-      <base target="_blank">
-    <title>Веб-сайты и приложения</title>
-  </head>
 
-  <body>
-    <div class="menu-top">
-      <div class="container">
-        <div class="menu_inner-top">
-          <div class="logo">
-            <img id="img_logo" src="./jmg/sobra&yura.jpg" alt="" />
-          </div>
-          <ul class="nav-top">
-            <li><a href="#">Мои работы</a></li>
-            <li><a href="#aboutme">Обо мне</a></li>
-            <li><a href="#contacts">Контакты</a></li>
-            <li><a href="blog/blog_index.html">Блог</a></li>
-          </ul>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="dataCvFromJsonToLs.js" defer></script>
+  <script src="/scripts/pictureAround.js" defer></script>
+  <script src="dataCvGetFromLs.js" defer></script>
+</head>
+<!--Проверка работы на другом ПК-->
+
+<body>
+  <div class="container0">
+    <div class="container1">
+      <header class="container2">
+        <img id="img_logo" src="img/sobra&yura.jpg" alt="" />
+        <div id="preamble">
+          Пока специализируюсь на локальных веб-приложениях , работающих на
+          любой операционной системе и это уже дает мне ощущение, что я
+          Волшебник... + постоянно учусь чему - то новому
         </div>
-        <div class="burger-top">
-          <img src="./jmg/burger.svg" alt="отображение бургера" />
-        </div>
-      </div>
-    </div>
-    <h1>Сайт-визитка разработчика веб-сайтов и веб-приложений.</h1>
-    <p class="preamble">
-      Пока я специализируюсь на JavaScript, специализируюсь на локальных
-      <span> веб-приложениях </span>, работающих на
-      <span>любой операционной системе </span> и это уже дает мне ощущение, что
-      я Волшебник... + постоянно учусь чему - то новому :
-    </p>
-
-    <table>
-      <caption>
-        <h3>РЕАЛИЗОВАННЫЕ РАБОТЫ</h3>
-      </caption>
-      <thead>
-        <tr>
-          <th>Название</th>
-          <th>Описание</th>
-          <th>Ссылка</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Простой список дел "To-do"</td>
-          <td>
-            Веб-приложение для формирования список дел, фиксации выполненных
-            задач. Использовано хранилище LocalStorage
-          </td>
-          <td>
-            <a
-              href="https://mister-project.github.io/ToDoList_Lite/"
-              target="_blank"
-              >Посмотреть</a
-            >
-          </td>
-        </tr>
-        <tr>
-          <td>Пет-проект "Burger Haus"</td>
-          <td>Результат интренсива, исходным был дизайн в формате Figma</td>
-          <td>
-            <a href="https://mister-project.github.io/burgers/" target="_blank"
-              >Посмотреть</a
-            >
-          </td>
-        </tr>
-        <tr>
-          <td>Сайт "Услуги электрика"</td>
-          <td>
-            Тренировочный сайт, функционал реализован модулями JavaScript с
-            применением технологии WebPack. Так же использована библиотека
-            'Swiper' для реализации слайдера с товарами. "Аккордеон" реализован
-            на JS
-          </td>
-          <td>
-            <a
-              href="https://mister-project.github.io/electricservices/"
-              target="_blank"
-              >Посмотреть</a
-            >
-          </td>
-        </tr>
-        <tr>
-          <td>Игра - усложненные пятнашки</td>
-          <td>
-            Реализовано на JavaScript - отработка ДЕЛЕГИРОВАНИЯ СОБЫТИЙ На
-            каждой клетке есть кнопки с направлением. При клике на кнопку,
-            клетка меняется с соответствующей клеткой своим положением,
-            соответственно направлению стрелки.Если вверх, вниз вправо или влево
-            идти некуда, то происходить ничего не должно(со следующей строкой
-            поменяться можно (например 20 с 21).) При клике на кнопку RESET все
-            клетки должны вставать на свои места
-          </td>
-          <td>
-            <a href="https://mister-project.github.io/rebbits/" target="_blank"
-              >Посмотреть</a
-            >
-          </td>
-        </tr>
-        <tr>
-          <td>Сайт для продажи печенья</td>
-          <td>
-            Верстку делалал с макета в Figma. Реализация функция - на React и
-            TypeScript
-          </td>
-          <td>
-            <a href="https://mister-project.github.io/cookies/" target="_blank"
-              >Посмотреть</a
-            >
-          </td>
-        </tr>
-        <tr>
-          <td>Калькулятор верстки</td>
-          <td>
-            Калькулятор, реализованный на JavaScript для расчета работ по
-            верстке
-          </td>
-          <td>
-            <a
-              href="https://mister-project.github.io/calcWebStudio/"
-              target="_blank"
-              >Посмотреть</a
-            >
-          </td>
-        </tr>
-        <tr>
-          <td>Интернет-магазин</td>
-          <td>Решение реализовано на CMS Wordpress и плагине WooCommerce</td>
-          <td>
-            <a href="https://shop.pmpro.ru/" target="_blank">Посмотреть</a>
-          </td>
-        </tr>
-        <tr>
-          <td>Веб-приложение "Вещи по местам"</td>
-          <td>
-            Приложение можно использовать при переезде и/или наведении порядка в
-            своих вещах. Определяете вещи место, заносите через форму в таблицу,
-            потом место и вещь по любому слову можно легко найти. Данные
-            храняться в csv - файлах (загрузка в начале работы и выгрузка в
-            конце, если внесены изменения) - промежуточное хранение -
-            localStorage браузера.
-            <a href="https://youtu.be/8Vfnlnni3Vg">Смотреть на YouTube</a>
-          </td>
-          <td>
-            <a
-              href="https://mister-project.github.io/thingsInPlaces/"
-              target="_blank"
-              >Посмотреть</a
-            >
-          </td>
-        </tr>
-        <tr>
-          <td>Интернет-магазин Wildberries</td>
-          <td>
-            Результат интенсива. Взята готовая (НЕАДАПТИРОВАННАЯ) верстка
-            англоязычного сайта. СМОТРЕТЬ ЛУЧШЕ НА ПК ИЛИ ПЛАНШЕТЕ. Код чистый
-            JavaScript без внешних библиотек. Реализована подгрузка карточек
-            товаров c FireBase методом fetch, автофильтрация по гендеру и
-            категориям при переходе по страницам + поиск через окно поиска на
-            каждой странице. Массив товаров храниться и перезаписывается в
-            localStorage. Большую часть проекта занимает корзина товаров. При
-            выборе первого товара в localstorage формируется отдельная запись по
-            корзине и она перезаписывается при каждом изменении в корзине. При
-            отправке заказа, из localstorage формируется объект с выбранными
-            товарами и итоговыми суммами. Он, вместе с контактами пользователя и
-            итоговой суммой отправляется на тестовый сервер тоже методом fetch.
-            При положительном ответе от сервера, пользователь получает сообщение
-            об успешной отправке и корзина (localstorage) очищается
-          </td>
-          <td>
-            <a
-              href="https://mister-project.github.io/wildberris/"
-              target="_blank"
-              >Посмотреть</a
-            >
-          </td>
-        </tr>
-      </tbody>
-    </table>
-
-    <a name="aboutme"></a>
-    <h2>Обо мне</h2>
-    <p class="preamble blog_post" >
-      👋Здравствуйте! Меня зовут Юрий, проживаю в Ногинском районе Московской
-      области.<br />
-
-      У меня разнообразный опыт в IT, который я приобрел самостоятельно, изучая
-      необходимые технологии для работы. <br>
-        Освоил базы данных на MS Access, а
-      также HTML, CSS и WordPress. Недавно решил реализовать свою давнюю мечту
-      и погрузиться в веб-разработку. С прошлого года активно занимаюсь
-      системным обучением. Я успешно завершил курсы по JavaScript и получил
-      сертификат, а также прохожу курс по Vue.js, из 12 уроков завершил 10. В
-      планах — изучение React, который включает 60 уроков. <br>
-        Помимо
-      веб-разработки, у меня есть увлечения, такие как горные лыжи, водный
-      туризм, рыбалка и видеомонтаж. Я всегда открыт для новых возможностей и
-      сотрудничества!<br />
-
-      С уважением, Юрий Куликов
-    </p>
-    <a name="contacts"></a>
-    <h2>КОНТАКТЫ</h2>
-    <p class="contacts preamble">
-      <img src="./jmg/contacts.jpg" alt="Карточка с контактами" />
-    </p>
-    <div class="menu-footer">
-      <div class="menu_inner-footer">
-        <!-- <div class="logo">
-          <img id="img_logo" src="./jmg/web-developer-logo.jpg" alt="" />
-        </div> -->
-        <ul class="nav-footer">
-          <img id="btn_close_menu" src="./jmg/cross_46mfmn8ptqxq.svg" alt="" />
-          <li><a href="#">Мои работы</a></li>
-          <li><a href="#aboutme">Обо мне</a></li>
+        <ul class="nav">
+          <li><a href="#about">Обо мне</a></li>
+          <li><a href="#experience">Опыт</a></li>
+          <li><a href="#projects">Проекты</a></li>
           <li><a href="#contacts">Контакты</a></li>
-          <li><a href="blog/blog_index.html">Блог</a></li>
-        </ul>
-      </div>
-    </div>
+          <li><a href="https://github.com/mister-project" target="_blank">GitHub</a></li>
+          <li><a href="blog/blog_index.html" target="_blank">Блог</a></li>
+          <li><a href="https://t.me/+t00FWQ3Ar685NDdi" target="_blank">ТГ-канал</a></li>
 
-    <div class="menu-top">
-      <div class="container">
-        <div class="menu_inner-top">
-          <ul class="nav-top">
-            <li><a href="#">Мои работы</a></li>
-            <li><a href="#aboutme">Обо мне</a></li>
-            <li><a href="#contacts">Контакты</a></li>
-            <li><a href="blog/blog_index.html">БЛОГ</a></li>
-          </ul>
-        </div>
-        <div class="burger-top1">
-          <img src="./jmg/burger.svg" alt="отображение бургера" />
-        </div>
+        </ul>
+      </header>
+      <div class="container3">
+        <a id="about">
+          <h2>ОБО МНЕ</h2>
+          👋Здравствуйте! Я - Юра, проживаю в Ногинском районе
+          Московской области. У меня разнообразный опыт в IT, который я
+          приобрел самостоятельно, изучая необходимые технологии для работы. Я
+          освоил базы данных на MS Access, а также HTML, CSS и WordPress.
+          Недавно я решил реализовать свою давнюю мечту и погрузиться в
+          веб-разработку. С прошлого года активно занимаюсь системным
+          обучением. Я успешно завершил курсы по JavaScript и получил
+          сертификат, а также прохожу курс по Vue.js, из 12 уроков завершил
+          10. В планах — изучение React, который включает 60 уроков. Помимо
+          веб-разработки, у меня есть увлечения, такие как горные лыжи, водный
+          туризм, рыбалка и видеомонтаж. Я всегда открыт для новых
+          возможностей и сотрудничества!
+        </a>
+        <section id="experience">
+          <h2>Опыт</h2>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet
+          asperiores, officiis. Corporis cum deleniti explicabo magnam minima
+          unde! Ab beatae corporis cupiditate debitis dolor dolore ducimus ea
+          eaque eum excepturi expedita in ipsa libero molestiae necessitatibus
+          nihil omnis placeat porro provident quas repellendus rerum similique
+          soluta veritatis, vitae. Atque blanditiis consequatur consequuntur
+          earum eveniet id illo in natus, neque nisi non obcaecati quidem
+          repudiandae sed sit tempore voluptate! At consequuntur dignissimos
+          fugiat ipsa nemo neque perferendis, rem voluptas voluptate
+          voluptatum? Ad aperiam aut commodi delectus doloremque, dolores
+          eveniet exercitationem iusto labore laborum magnam nihil nulla
+          obcaecati placeat quis quos rem repellendus reprehenderit sint
+          tempora totam veniam vitae voluptatum. Ab animi cum dicta doloremque
+          ex iusto magnam nam odit optio qui, quia repellat sequi tempore ut
+          veritatis. A deleniti fugiat repellendus. Accusantium aspernatur
+          debitis eaque natus officia quibusdam sint? Adipisci delectus
+          nostrum odit porro sunt voluptas. Alias consectetur deleniti
+          dignissimos distinctio fugit libero, rem rerum. Animi architecto et
+          expedita harum molestiae quo temporibus ut. Consequuntur eaque
+          excepturi expedita illum neque sapiente unde voluptates. Consectetur
+          doloremque doloribus facilis fuga ut? Alias assumenda atque beatae,
+          eligendi est, illo iure laborum, molestias nihil nostrum officia
+          perferendis quae quaerat quis sit temporibus ullam. Dolores, itaque.
+        </section>
+        <section id="projects">
+          <h2>Проекты</h2>
+          <br>
+          <table class="project_table">
+
+            <thead>
+              <tr>
+                <th>Название</th>
+                <th>Описание</th>
+                <th>Ссылка</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Простой список дел "To-do"</td>
+                <td>
+                  Веб-приложение для формирования список дел, фиксации выполненных
+                  задач. Использовано хранилище LocalStorage
+                </td>
+                <td>
+                  <a href="https://mister-project.github.io/ToDoList_Lite/" target="_blank">Посмотреть</a>
+                </td>
+              </tr>
+              <tr>
+                <td>Пет-проект "Burger Haus"</td>
+                <td>Результат интренсива, исходным был дизайн в формате Figma</td>
+                <td>
+                  <a href="https://mister-project.github.io/burgers/" target="_blank">Посмотреть</a>
+                </td>
+              </tr>
+              <tr>
+                <td>Сайт "Услуги электрика"</td>
+                <td>
+                  Тренировочный сайт, функционал реализован модулями JavaScript с
+                  применением технологии WebPack. Так же использована библиотека
+                  'Swiper' для реализации слайдера с товарами. "Аккордеон" реализован
+                  на JS
+                </td>
+                <td>
+                  <a href="https://mister-project.github.io/electricservices/" target="_blank">Посмотреть</a>
+                </td>
+              </tr>
+              <tr>
+                <td>Игра - усложненные пятнашки</td>
+                <td>
+                  Реализовано на JavaScript - отработка ДЕЛЕГИРОВАНИЯ СОБЫТИЙ На
+                  каждой клетке есть кнопки с направлением. При клике на кнопку,
+                  клетка меняется с соответствующей клеткой своим положением,
+                  соответственно направлению стрелки.Если вверх, вниз вправо или влево
+                  идти некуда, то происходить ничего не должно(со следующей строкой
+                  поменяться можно (например 20 с 21).) При клике на кнопку RESET все
+                  клетки должны вставать на свои места
+                </td>
+                <td>
+                  <a href="https://mister-project.github.io/rebbits/" target="_blank">Посмотреть</a>
+                </td>
+              </tr>
+              <tr>
+                <td>Сайт для продажи печенья</td>
+                <td>
+                  Верстку делалал с макета в Figma. Реализация функция - на React и
+                  TypeScript
+                </td>
+                <td>
+                  <a href="https://mister-project.github.io/cookies/" target="_blank">Посмотреть</a>
+                </td>
+              </tr>
+              <tr>
+                <td>Калькулятор верстки</td>
+                <td>
+                  Калькулятор, реализованный на JavaScript для расчета работ по
+                  верстке
+                </td>
+                <td>
+                  <a href="https://mister-project.github.io/calcWebStudio/" target="_blank">Посмотреть</a>
+                </td>
+              </tr>
+              <tr>
+                <td>Интернет-магазин</td>
+                <td>Решение реализовано на CMS Wordpress и плагине WooCommerce</td>
+                <td>
+                  <a href="https://shop.pmpro.ru/" target="_blank">Посмотреть</a>
+                </td>
+              </tr>
+              <tr>
+                <td>Веб-приложение "Вещи по местам"</td>
+                <td>
+                  Приложение можно использовать при переезде и/или наведении порядка в
+                  своих вещах. Определяете вещи место, заносите через форму в таблицу,
+                  потом место и вещь по любому слову можно легко найти. Данные
+                  храняться в csv - файлах (загрузка в начале работы и выгрузка в
+                  конце, если внесены изменения) - промежуточное хранение -
+                  localStorage браузера.
+                  <a href="https://youtu.be/8Vfnlnni3Vg">Смотреть на YouTube</a>
+                </td>
+                <td>
+                  <a href="https://mister-project.github.io/thingsInPlaces/" target="_blank">Посмотреть</a>
+                </td>
+              </tr>
+              <tr>
+                <td>Интернет-магазин Wildberries</td>
+                <td>
+                  Результат интенсива. Взята готовая (НЕАДАПТИРОВАННАЯ) верстка
+                  англоязычного сайта. СМОТРЕТЬ ЛУЧШЕ НА ПК ИЛИ ПЛАНШЕТЕ. Код чистый
+                  JavaScript без внешних библиотек. Реализована подгрузка карточек
+                  товаров c FireBase методом fetch, автофильтрация по гендеру и
+                  категориям при переходе по страницам + поиск через окно поиска на
+                  каждой странице. Массив товаров храниться и перезаписывается в
+                  localStorage. Большую часть проекта занимает корзина товаров. При
+                  выборе первого товара в localstorage формируется отдельная запись по
+                  корзине и она перезаписывается при каждом изменении в корзине. При
+                  отправке заказа, из localstorage формируется объект с выбранными
+                  товарами и итоговыми суммами. Он, вместе с контактами пользователя и
+                  итоговой суммой отправляется на тестовый сервер тоже методом fetch.
+                  При положительном ответе от сервера, пользователь получает сообщение
+                  об успешной отправке и корзина (localstorage) очищается
+                </td>
+                <td>
+                  <a href="https://mister-project.github.io/wildberris/" target="_blank">Посмотреть</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="projects_container">
+            <div class="video_description">
+              <a href="https://mister-project.github.io/ToDoList_Lite/" target="_blank" rel="noopener noreferrer">
+                <img src="/img/project1.png" alt="список дел картинка">
+              </a>
+            </div>
+            <div class="rest_description">
+              <div class="name_project">Простой список дел "To-do"
+                <img src="/img/arrow4.png" alt="стрелка вправо" class="arrow4">
+              </div>
+              <div class="project_description">
+                Веб-приложение для формирования список дел, фиксации выполненных задач. Использовано хранилище
+                LocalStorage
+              </div>
+              <div class="project_links">project_links</div>
+              <div class="project_stack">project_stack</div>
+            </div>
+          </div>
+          <div class="projects_container">
+            <div class="video_description">
+              <iframe width="100%" height="100%" src="https://rutube.ru/play/embed/46f469076760ec54c81cb0174062e9cc/"
+                frameborder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen
+                allowfullscreen></iframe>
+            </div>
+            <div class="rest_description">
+              <div class="name_project">Name Project</div>
+              <div class="project_description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet
+                asperiores, officiis. Corporis cum deleniti explicabo magnam
+                minima unde! Ab beatae corporis cupiditate debitis dolor
+                dolore ducimus ea eaque eum excepturi expedita in ipsa libero
+                molestiae necessitatibus nihil omnis placeat porro provident
+                quas repellendus rerum similique soluta veritatis, vitae.
+              </div>
+              <div class="project_links">project_links</div>
+              <div class="project_stack">project_stack</div>
+            </div>
+
+
+          </div>
+
+        </section>
+        <section id="contacts">
+
+          <h2>КОНТАКТЫ</h2>
+          <br>
+          <p class="contacts preamble">
+            <img src="img/contacts.jpg" alt="Карточка с контактами" />
+          </p>
+        </section>
       </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
