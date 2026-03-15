@@ -162,6 +162,7 @@ section {
 }
 .project_table td {
   border-bottom: 2px solid white;
+  vertical-align: text-top;
 }
 
 .nav {
@@ -195,4 +196,13 @@ section {
 #contacts img {
   /* border: 2px solid red; */
   margin: auto;
+}
+
+a {
+  color: white;
+  /* Серый цвет текста */
+}
+
+.thumbnail_stack {
+  width: 65px;
 }
